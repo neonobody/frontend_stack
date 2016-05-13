@@ -1,0 +1,113 @@
+// ==========================================================================
+// = Global Variables
+// ==========================================================================
+
+/**
+ * CSS layout debugging
+ * @link http://pesticide.io/
+ * @type boolean
+ */
+
+$pesticide-debug              : false;
+
+/**
+ * Define width for browsers w/out media query support
+ * @link http://jakearchibald.github.com/sass-ie/
+ * @type boolean
+ */
+
+$fix-mqs                      : false !default;
+
+/**
+ * Turn on/off IE specific styles
+ * @link http://jakearchibald.github.com/sass-ie/
+ * @type boolean
+ */
+
+$old-ie                       : false !default;
+
+
+// Base Sizes
+// ==========
+
+/**
+ * Base font size in used in _mixins.scss
+ * @type number
+ */
+
+$base-font-size               : 16;
+
+/**
+ * Base line-height in used in _mixins.scss
+ * @type number
+ */
+
+$base-line-height             : 24;
+
+
+// Font Stacks
+// ===========
+
+/**
+ * (optional) URL for Google Fonts import
+ * @type string
+ */
+
+// $google-fonts-url          : 'http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro';
+
+/**
+ * (optional) names of webfonts imports
+ * @type array
+ */
+
+// $fonts                     : 'FONTNAME', 'FONTNAME', 'FONTNAME', 'FONTNAME';
+
+/**
+ * define font stack used for sans-serifs
+ * @type string
+ */
+
+$font-family-hattori: 'Hattori', 'source-sans-pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+$font-family-default          : $font-family-hattori;
+
+// Font Weights
+// ============
+
+$font-weight-light            : 300;
+$font-weight-normal           : 400;
+$font-weight-semibold         : 700;
+$font-weight-bold             : 900;
+
+
+// Breakpoints
+// There are no common breakpoints; examples based on the official Sass styleguide
+// You'll need to define your own breakpoints to suit your design
+// ============
+
+$mobile-small           : 375px;
+$mobile                 : 480px;
+$tablet                 : 768px;
+$desktop-small          : 980px;
+$screen-large           : 1160px;
+
+/**
+ * Define z-indexes for various elements
+ * @link http://www.sitepoint.com/using-sass-maps/
+ * @type number
+ */
+
+// z-index reference
+$zindex: (
+  modal                       : 9000,
+  overlay                     : 8000,
+  dropdown                    : 7000,
+  header                      : 6000,
+  footer                      : 5000
+);
+
+
+$mobile-nav-width : 300px;
+$mobile-nav-max-width : 300px;
+$mobile-nav-max-width-small : 250px;
